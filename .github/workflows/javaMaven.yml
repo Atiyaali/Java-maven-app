@@ -53,7 +53,7 @@ jobs:
           docker build \
           -t atiyadocker/java-manven:${{ github.sha }} \
           -t atiyadocker/java-maven:latest \
-          ./backend
+          .
       - name: Push Docker Image
         run: |
          docker push atiyadocker/java-maven:${{ github.sha }}
