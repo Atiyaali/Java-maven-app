@@ -51,7 +51,7 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build \
-          -t atiyadocker/java-manven:${{ github.sha }} \
+          -t atiyadocker/java-maven:${{ github.sha }} \
           -t atiyadocker/java-maven:latest \
           .
       - name: Push Docker Image
